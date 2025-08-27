@@ -7,6 +7,7 @@ body {
   line-height: 1.6;
 }
 
+
 /* Navbar container */
 .navbar {
   display: flex;
@@ -180,6 +181,10 @@ footer {
   text-align: center;
   padding: 1.5rem;
   margin-top: 3rem;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 /* Floating Chat Button */
