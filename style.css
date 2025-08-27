@@ -2,7 +2,7 @@
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
-  background: #ffffff;
+  background: #202020;
   color: #333;
   line-height: 1.6;
 }
@@ -13,7 +13,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 15px 30px;
-  background-color: #003399; /* Blue */
+  background-color: #202020; /* Blue */
   color: white;
   position: sticky;
   top: 0;
@@ -83,7 +83,7 @@ section h3 {
   text-align: center;
   font-size: 2rem;
   margin-bottom: 2rem;
-  color: #003399;
+  color: #ffffff;
 }
 
 
