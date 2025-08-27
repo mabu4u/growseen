@@ -13,8 +13,8 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 15px 30px;
-  background: linear-gradient(to right, #ffffff, #7b7b7b); /* Gradient from lighter to darker */
-  color: white;
+  background: radial-gradient(circle at center, #d9d9d9, #ffffff); /* Gradient from lighter to darker */
+  color: rgb(0, 0, 0);
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -36,7 +36,7 @@ body {
 
 .nav-links li a {
   text-decoration: none;
-  color: white;
+  color: rgb(0, 0, 0);
   font-weight: 500;
 }
 
@@ -154,9 +154,9 @@ section h3 {
   background: #fff;
   padding: 2rem;
   border-radius: 10px;
-  box-shadow: 2px 13px 25px 4px rgba(0,0,0,0.36);
--webkit-box-shadow: 2px 13px 25px 4px rgba(0,0,0,0.36);
--moz-box-shadow: 2px 13px 25px 4px rgba(0,0,0,0.36);
+  box-shadow: 0px 10px 11px -4px rgba(0,0,0,0.75);
+-webkit-box-shadow: 0px 10px 11px -4px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 10px 11px -4px rgba(0,0,0,0.75);
   text-align: center;
   transition: all 0.3s ease;
   border-top: 4px solid #003399;
