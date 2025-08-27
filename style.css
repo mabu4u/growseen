@@ -2,7 +2,7 @@
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
-  background: #202020;
+  background: #ffffff;
   color: #333;
   line-height: 1.6;
 }
@@ -13,7 +13,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 15px 30px;
-  background-color: #202020; /* Blue */
+  background: linear-gradient(to right, #ffffff, #7b7b7b); /* Gradient from lighter to darker */
   color: white;
   position: sticky;
   top: 0;
@@ -83,7 +83,7 @@ section h3 {
   text-align: center;
   font-size: 2rem;
   margin-bottom: 2rem;
-  color: #ffffff;
+  color: #151515;
 }
 
 
@@ -153,7 +153,9 @@ section h3 {
   background: #fff;
   padding: 2rem;
   border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+  box-shadow: 2px 13px 25px 4px rgba(0,0,0,0.36);
+-webkit-box-shadow: 2px 13px 25px 4px rgba(0,0,0,0.36);
+-moz-box-shadow: 2px 13px 25px 4px rgba(0,0,0,0.36);
   text-align: center;
   transition: all 0.3s ease;
   border-top: 4px solid #003399;
