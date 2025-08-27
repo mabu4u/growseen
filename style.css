@@ -79,6 +79,14 @@ body {
   padding: 5rem 2rem;
 }
 
+section h3 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #003399;
+}
+
+
 .hero h2 {
   font-size: 2.5rem;
   margin-bottom: 1rem;
@@ -221,3 +229,4 @@ footer {
   50% { box-shadow: 0 0 20px rgba(0,112,243,0.9), 0 0 35px rgba(0,200,83,0.8); }
   100% { box-shadow: 0 0 12px rgba(0,112,243,0.6), 0 0 24px rgba(0,200,83,0.5); }
 }
+
