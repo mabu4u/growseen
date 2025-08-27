@@ -141,24 +141,23 @@
 <body>
 
   <!-- Navbar -->
-  <nav>
-    <h1>GrowSeen Digital</h1>
-    <ul>
-      <li><a href="#services">Services</a></li>
-      <li><a href="#portfolio">Portfolio</a></li>
-      <li><a href="#contact">Work With Us</a></li>
-    </ul>
-  </nav>
+  
+ <nav class="navbar">
+  <div class="logo">GrowSeen Digital</div>
 
-  <!-- Hero -->
-  <section class="hero">
-    <h2>Grow Fast. <span>Get Seen.</span></h2>
-    <p>Stop hiding online. From social media to SEO, we help brands and SMBs turn visibility into real growth.</p>
-    <div class="cta-buttons">
-      <button class="btn btn-brand">I'm a Brand</button>
-      <button class="btn btn-smb">I'm an SMB</button>
-    </div>
-  </section>
+  <!-- Burger Icon (only visible on mobile) -->
+  <div class="burger" onclick="toggleMenu()">
+    ☰
+  </div>
+
+  <!-- Navigation Links -->
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#services">Services</a></li>
+    <li><a href="#portfolio">Portfolio</a></li>
+    <li><a href="#work">Work With Us</a></li>
+  </ul>
+</nav>
+
 
   <!-- Services -->
   <section id="services">
@@ -267,4 +266,5 @@
 
 </body>
 </html>
+
 
