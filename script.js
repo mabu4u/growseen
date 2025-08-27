@@ -1,15 +1,32 @@
+document.addEventListener('DOMContentLoaded', function() {
+    // Get all links that have a hash (#) in their href
+    const links = document.querySelectorAll('a[href^="#"]');
+    
+    links.forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            
+            const targetId = this.getAttribute('href');
+            const targetElement = document.querySelector(targetId);
+            
+            if (targetElement) {
+                const offsetTop = targetElement.offsetTop;
+                window.scrollTo({
+                    top: offsetTop - 80, // Subtract 80px to account for the fixed navbar
+                    behavior: 'smooth'
+                });
+                
+                // Close mobile menu if open
+                const navLinks = document.getElementById('navLinks');
+                if (navLinks.classList.contains('show')) {
+                    navLinks.classList.remove('show');
+                }
+            }
+        });
+    });
+});
+
 function toggleMenu() {
-  document.getElementById("navLinks").classList.toggle("show");
+    document.getElementById("navLinks").classList.toggle("show");
 }
 
-// Smooth scroll for nav links
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener('click', function(e) {
-    e.preventDefault();
-    document.querySelector(this.getAttribute('href')).scrollIntoView({
-      behavior: 'smooth'
-    });
-    // close menu on mobile after click
-    document.getElementById("navLinks").classList.remove("show");
-  });
-});
