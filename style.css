@@ -24,6 +24,65 @@ a {
   justify-content: space-between;
   align-items: center;
   padding: 15px 30px;
+  background-color: #003399; /* your blue */
+  color: white;
+}
+
+/* Logo */
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Links (desktop default) */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+}
+
+/* Burger icon (hidden on desktop by default) */
+.burger {
+  font-size: 28px;
+  cursor: pointer;
+  display: none;
+}
+
+/* ----- Mobile View ----- */
+@media screen and (max-width: 768px) {
+  .nav-links {
+    display: none; /* hidden by default */
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background: #003399;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+    border-radius: 10px;
+  }
+
+  .nav-links.show {
+    display: flex; /* only show when toggled */
+  }
+
+  .burger {
+    display: block; /* show burger on mobile */
+  }
+}
+
+/* Navbar container */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
   background-color: #0a2540; /* dark blue */
   color: white;
 }
@@ -263,4 +322,5 @@ a {
     font-size: 32px;
   }
 }
+
 
