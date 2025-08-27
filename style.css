@@ -46,7 +46,7 @@ body {
   font-size: 28px;
   cursor: pointer;
   display: none;
-  color: white;
+  color: rgb(0, 0, 0);
 }
 
 /* Mobile Nav */
