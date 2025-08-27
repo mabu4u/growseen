@@ -3,101 +3,186 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>GrowSeen Digital | Social Media, Content, & SEO for SMBs</title>
-  <meta name="description" content="We help brands and SMBs grow fast and get seen online. Social media, content creation, and SEO strategies that turn visibility into real growth.">
-  
-  <!-- Open Graph / Social Preview -->
-  <meta property="og:title" content="GrowSeen Digital | Social Media, Content, & SEO for SMBs">
-  <meta property="og:description" content="We help brands and SMBs grow fast and get seen online. Social media, content creation, and SEO strategies that turn visibility into real growth.">
-  <meta property="og:image" content="assets/og-image.jpg">
-  <meta property="og:url" content="https://growseen.digital">
-  <meta property="og:type" content="website">
+  <title>GrowSeen Digital - Grow Fast. Get Seen.</title>
+  <meta name="description" content="GrowSeen Digital helps brands and SMBs with SEO, social media, and digital marketing to turn visibility into real growth.">
+  <style>
+    /* Reset & fonts */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: Arial, sans-serif; color: #333; line-height: 1.6; background-color: #f9f9f9; }
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-  
-  <!-- Stylesheet -->
-  <link rel="stylesheet" href="style.css">
-  
-  <!-- Favicon -->
-  <link rel="icon" href="assets/favicon.png" type="image/png">
+    /* Navbar */
+    nav {
+      background: #003399;
+      color: #fff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 5%;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav h1 { font-size: 1.3rem; font-weight: bold; }
+    nav ul { display: flex; list-style: none; }
+    nav ul li { margin-left: 20px; }
+    nav ul li a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+    nav ul li a:hover { color: #A2FF00; }
+
+    /* Hero */
+    .hero {
+      background: linear-gradient(135deg, #003399, #4A90E2);
+      color: #fff;
+      text-align: center;
+      padding: 5rem 2rem;
+    }
+    .hero h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      font-weight: 700;
+    }
+    .hero h2 span { color: #A2FF00; }
+    .hero p {
+      font-size: 1.1rem;
+      max-width: 650px;
+      margin: 0 auto 2rem;
+    }
+    .cta-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+    }
+    .btn {
+      padding: 0.9rem 1.8rem;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: all 0.3s ease;
+    }
+    .btn-brand {
+      background: #fff;
+      color: #003399;
+      font-weight: bold;
+    }
+    .btn-brand:hover {
+      background: #A2FF00;
+      color: #003399;
+    }
+    .btn-smb {
+      background: #A2FF00;
+      color: #003399;
+      font-weight: bold;
+    }
+    .btn-smb:hover {
+      background: #88cc00;
+    }
+
+    /* Section Titles */
+    section {
+      padding: 4rem 5%;
+    }
+    section h3 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 2rem;
+      color: #003399;
+      position: relative;
+    }
+    section h3::after {
+      content: "";
+      display: block;
+      width: 60px;
+      height: 4px;
+      background: #A2FF00;
+      margin: 0.5rem auto;
+      border-radius: 2px;
+    }
+
+    /* Services */
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+    .service-card {
+      background: #fff;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+      text-align: center;
+      transition: all 0.3s ease;
+      border-top: 4px solid #003399;
+    }
+    .service-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+      border-top: 4px solid #A2FF00;
+    }
+    .service-card h4 {
+      color: #003399;
+      margin-bottom: 1rem;
+    }
+
+    /* Footer */
+    footer {
+      background: #003399;
+      color: #fff;
+      text-align: center;
+      padding: 1.5rem;
+      margin-top: 3rem;
+    }
+  </style>
 </head>
 <body>
+
   <!-- Navbar -->
-  <header class="navbar">
-    <div class="logo">GrowSeen Digital</div>
-    <nav>
-      <a href="#services" class="nav-link">Services</a>
-      <a href="#portfolio" class="nav-link">Portfolio</a>
-      <a href="#contact" class="cta-nav">Work With Us</a>
-    </nav>
-  </header>
+  <nav>
+    <h1>GrowSeen Digital</h1>
+    <ul>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#contact">Work With Us</a></li>
+    </ul>
+  </nav>
 
   <!-- Hero -->
   <section class="hero">
-    <h1>Grow Fast. Get Seen.</h1>
+    <h2>Grow Fast. <span>Get Seen.</span></h2>
     <p>Stop hiding online. From social media to SEO, we help brands and SMBs turn visibility into real growth.</p>
-    <div class="hero-buttons">
-      <a href="https://wa.me/6287776266564" class="btn brand-btn">I'm a Brand</a>
-      <a href="https://wa.me/6287776266564" class="btn smb-btn">I'm an SMB</a>
+    <div class="cta-buttons">
+      <button class="btn btn-brand">I'm a Brand</button>
+      <button class="btn btn-smb">I'm an SMB</button>
     </div>
   </section>
 
   <!-- Services -->
-  <section id="services" class="services">
-    <h2>Our Services</h2>
-    <div class="service-cards">
-      <div class="card">
-        <h3>Social Media Management</h3>
-        <p>Grow your brand with consistent, engaging social content that builds trust and drives results.</p>
+  <section id="services">
+    <h3>Our Services</h3>
+    <div class="services">
+      <div class="service-card">
+        <h4>SEO Optimization</h4>
+        <p>Boost your search rankings and make your business discoverable by the right audience.</p>
       </div>
-      <div class="card">
-        <h3>Content Creation</h3>
-        <p>From visuals to copy, we craft compelling content designed to capture attention and convert.</p>
+      <div class="service-card">
+        <h4>Social Media Marketing</h4>
+        <p>Grow your followers, engagement, and conversions with powerful social campaigns.</p>
       </div>
-      <div class="card">
-        <h3>SEO</h3>
-        <p>Boost your visibility and rank higher with smart search strategies that bring in the right audience.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Portfolio -->
-  <section id="portfolio" class="portfolio">
-    <h2>Our Portfolio</h2>
-    <div class="portfolio-items">
-      <div class="portfolio-card">
-        <img src="assets/portfolio1.jpg" alt="Social Media Campaign - Client A">
-        <p>Social Media Campaign — Client A</p>
-      </div>
-      <div class="portfolio-card">
-        <img src="assets/portfolio2.jpg" alt="Content Creation - Client B">
-        <p>Content Creation — Client B</p>
-      </div>
-      <div class="portfolio-card">
-        <img src="assets/portfolio3.jpg" alt="SEO Growth - Client C">
-        <p>SEO Growth — Client C</p>
+      <div class="service-card">
+        <h4>Content Strategy</h4>
+        <p>Deliver impactful content that connects with your audience and drives results.</p>
       </div>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer id="contact" class="footer">
-    <h2>Let’s Work Together</h2>
-    <p>Email: <a href="mailto:growseendigital@gmail.com">growseendigital@gmail.com</a></p>
-    <p>Instagram: <a href="https://instagram.com/growseen.digital" target="_blank">@growseen.digital</a></p>
-    <p>WhatsApp: <a href="https://wa.me/6287776266564" target="_blank">+62 877-7626-6564</a></p>
-    <p class="copyright">© 2025 GrowSeen Digital. All rights reserved.</p>
+  <footer>
+    <p>&copy; 2025 GrowSeen Digital. All rights reserved.</p>
   </footer>
 
-  <!-- Floating WhatsApp Button -->
-  <a href="https://wa.me/6287776266564" class="chat-button" target="_blank">
-    <div class="chat-icon">
-      💬
-      <span class="online-dot"></span>
-    </div>
-  </a>
-
-  <script src="script.js"></script>
 </body>
 </html>
