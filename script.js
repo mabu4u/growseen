@@ -1,3 +1,9 @@
+<script>
+  function toggleMenu() {
+    document.getElementById("navLinks").classList.toggle("show");
+  }
+</script>
+
 // Smooth scroll for nav links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function(e) {
@@ -7,3 +13,4 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
   });
 });
+
