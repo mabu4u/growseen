@@ -74,10 +74,15 @@ body {
 
 /* Hero */
 .hero {
-  background: linear-gradient(135deg, #003399, #4A90E2);
+  background: linear-gradient(135deg, rgba(0, 51, 153, 0.7), rgba(74, 144, 226, 0.7)), 
+              url("bg.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   color: #fff;
   text-align: center;
   padding: 5rem 2rem;
+  position: relative;
 }
 
 section h3 {
