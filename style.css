@@ -374,3 +374,83 @@ html {
   background: #A2FF00;
   color: #003399;
 }
+
+/* About Page */
+.about {
+  padding: 3rem 10%;
+  text-align: center;
+}
+
+.about h2 {
+  font-size: 2.2rem;
+  color: #003399;
+  margin-bottom: 1.5rem;
+}
+
+.about p {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  color: #444;
+  line-height: 1.8;
+}
+
+/* Picture templates */
+.about-pictures {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  padding: 2rem 10%;
+}
+
+.pic-card {
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.pic-card:hover {
+  transform: translateY(-5px);
+}
+
+.pic-card img {
+  width: 100%;
+  display: block;
+}
+
+.pic-card p {
+  padding: 1rem;
+  font-size: 1rem;
+  color: #333;
+}
+
+/* Contact info block */
+.contact-info {
+  background: #f7f7f7;
+  text-align: center;
+  padding: 2rem 10%;
+  margin-top: 2rem;
+  border-top: 4px solid #003399;
+}
+
+.contact-info h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #003399;
+}
+
+.contact-info a {
+  color: #003399;
+  font-weight: bold;
+  text-decoration: none;
+}
+.contact-info a:hover {
+  color: #A2FF00;
+}
+.contact-info p {
+  font-size: 1rem;
+  color: #555;
+  margin: 0.5rem 0;
+}
