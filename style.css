@@ -21,6 +21,75 @@ body {
   z-index: 1000;
 }
 
+.work-with-us {
+  background: #ffffff;
+  color: #000000 !important;
+  position: relative;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-weight: 700 !important;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+  border: 2px solid #003399;
+  box-shadow: 4px 4px 0 #A2FF00;
+  transform: translate(-4px, -4px);
+}
+
+.work-with-us:hover {
+  transform: translate(0, 0);
+  box-shadow: 0 0 0 #A2FF00;
+  background: #003399;
+  color: #ffffff !important;
+}
+
+.work-with-us::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, #A2FF00, #003399, #A2FF00);
+  background-size: 200% auto;
+  z-index: -1;
+  animation: gradient 3s linear infinite;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  border-radius: 4px;
+}
+
+.work-with-us:hover::before {
+  opacity: 0.3;
+}
+
+.work-with-us::after {
+  content: '→';
+  margin-left: 0;
+  opacity: 0;
+  transition: all 0.3s ease;
+  position: absolute;
+  right: 10px;
+  transform: translateX(-5px);
+}
+
+.work-with-us:hover::after {
+  opacity: 1;
+  margin-left: 8px;
+  transform: translateX(0);
+}
+
+@keyframes gradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Add this to make the button stand out in the nav */
+.nav-links li:last-child {
+  margin-left: 10px;
+}
+
 /* Logo */
 .logo {
   font-size: 20px;
