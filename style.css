@@ -458,3 +458,76 @@ html {
   color: #555;
   margin: 0.5rem 0;
 }
+
+/* Work With Us Popup fixes */
+#workWithUsPopup .popup-content {
+  max-width: 480px;
+  text-align: center;
+}
+
+#workWithUsPopup h3 {
+  font-size: 1.7rem;
+  margin-bottom: 0.8rem;
+  color: #003399;
+}
+
+#workWithUsPopup p {
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+  color: #444;
+}
+
+/* CTA buttons inside Work With Us popup */
+#workWithUsPopup .cta-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+#workWithUsPopup .cta-buttons .btn {
+  padding: 0.8rem 1.6rem;
+  border: 2px solid transparent;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+/* Brand button */
+#workWithUsPopup .btn-brand {
+  background: #fff;
+  color: #003399;
+  border: 2px solid #003399;
+}
+#workWithUsPopup .btn-brand:hover {
+  background: #003399;
+  color: #fff;
+}
+
+/* SMB button */
+#workWithUsPopup .btn-smb {
+  background: #A2FF00;
+  color: #003399;
+  border: 2px solid #003399;
+}
+#workWithUsPopup .btn-smb:hover {
+  background: #88cc00;
+}
+
+/* Not now button (plain, smaller) */
+#workWithUsPopup .popup-close {
+  background: none;
+  color: #666;
+  border: none;
+  font-size: 0.9rem;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  transition: color 0.2s ease;
+}
+#workWithUsPopup .popup-close:hover {
+  color: #000;
+}
+
