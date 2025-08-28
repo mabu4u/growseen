@@ -400,7 +400,9 @@ html {
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2rem;
   padding: 2rem 10%;
+  align-items: start;   /* <--- this is the fix */
 }
+
 
 .pic-card {
   background: #fff;
@@ -417,8 +419,10 @@ html {
 
 .pic-card img {
   width: 100%;
+  height: auto;
   display: block;
 }
+
 
 .pic-card p {
   padding: 1rem;
