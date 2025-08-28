@@ -58,3 +58,34 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    const workWithUsBtn = document.querySelector('.work-with-us-btn');
+    const workPopup = document.getElementById('workWithUsPopup');
+    const closeButtons = workPopup.querySelectorAll('.popup-close');
+
+    workWithUsBtn.addEventListener('click', function(e) {
+        e.preventDefault();
+        workPopup.classList.add('active');
+    });
+
+    closeButtons.forEach(btn => {
+        btn.addEventListener('click', function() {
+            workPopup.classList.remove('active');
+        });
+    });
+
+    // Close popup when clicking outside
+    workPopup.addEventListener('click', function(e) {
+        if (e.target === workPopup) {
+            workPopup.classList.remove('active');
+        }
+    });
+
+    // Close popup with Escape key
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && workPopup.classList.contains('active')) {
+            workPopup.classList.remove('active');
+        }
+    });
+});
