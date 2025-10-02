@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GrowSeen Portfolio - Case Studies</title>
+  <meta name="description" content="GrowSeen Digital portfolio showcasing client success stories and marketing case studies.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="manifest" href="site.webmanifest">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">
+        <img src="image (27).webp" alt="GrowSeen Digital Logo" height="40">
+    </div>
+    <div class="burger" onclick="toggleMenu()">☰</div>
+    <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="index.html#services">Services</a></li>
+      <li><a href="https://payhip.com/growseen" >Resources</a></li>
+      <li><a href="#" class="work-with-us work-with-us-btn">Work With Us</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <h1>Our Portfolio</h1>
+    <p>Real results, real impact. See how GrowSeen helps businesses grow and get seen.</p>
+  </header>
+
+  <!-- Portfolio Section -->
+  <section class="portfolio">
+  <h2>Case Studies</h2>
+  <div class="portfolio-grid">
+
+    <!-- Project 1 -->
+    <div class="portfolio-card">
+      <img src="hnf-preview.jpg" alt="HNF Architecture Case Study">
+      <h3>HNF Architecture Studios</h3>
+      <p>We launched HNF’s Instagram page from zero. In just 30 days, the account reached over <strong>15,000 views</strong>, with <strong>25% from non-followers</strong>.</p>
+      <a href="hnf-case.html" class="btn">See Case Study</a>
+    </div>
+
+    <!-- Future Projects -->
+    <div class="portfolio-card">
+      <img src="sample-case.jpg" alt="Sample Case Study">
+      <h3>Coming Soon</h3>
+      <p>More success stories are on the way. Stay tuned for updates from our clients’ growth journeys.</p>
+      <a href="#" class="btn disabled">Coming Soon</a>
+    </div>
+
+  </div>
+</section>
+
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 GrowSeen Digital. All Rights Reserved.</p>
+    <p>
+      Email: <a href="mailto:growseendigital@gmail.com">growseendigital@gmail.com</a> |
+      WhatsApp: <a href="https://wa.me/6287776266564" target="_blank">+62 877-7626-6564</a> |
+      Instagram: <a href="https://instagram.com/growseen.digital" target="_blank">@growseen.digital</a>
+    </p>
+  </footer>
+
+  <!-- Floating Chat Button -->
+  <a href="https://wa.me/6287776266564" target="_blank" class="chat-btn">
+    <div class="chat-icon">
+      <!-- Chat Bubble SVG -->
+      <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="white" viewBox="0 0 24 24">
+        <path d="M20 2H4C2.9 2 2 2.9 2 4v18l4-4h14c1.1 0 2-.9 2-2V4C22 2.9 21.1 2 20 2z"/>
+      </svg>
+      <span class="online-dot"></span>
+    </div>
+  </a>
+
+  <script src="script.js"></script>
+
+  <!-- Work With Us Popup -->
+<div class="popup" id="workWithUsPopup">
+  <div class="popup-content">
+    <h3>Great! 🚀</h3>
+    <p>We’re excited to help you grow. Now, choose the option that best describes you:</p>
+    <div class="cta-buttons">
+      <a href="https://wa.me/6287776266564?text=Hi%20GrowSeen%20Team!%20I'm%20a%20Brand%20and%20want%20to%20discuss%20marketing%20opportunities." 
+         target="_blank" class="btn btn-brand">I'm a Brand</a>
+      <a href="https://wa.me/6287776266564?text=Hello%20GrowSeen!%20I'm%20an%20SMB%20and%20I'd%20like%20to%20see%20how%20you%20can%20help%20grow%20my%20business." 
+         target="_blank" class="btn btn-smb">I'm an SMB</a>
+    </div>
+    <button class="popup-close">Not now</button>
+  </div>
+</div>
+</body>
+</html>
